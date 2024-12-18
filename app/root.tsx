@@ -2,7 +2,8 @@ import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration }
 
 import type { Route } from './+types/root'
 import stylesheet from './app.css?url'
-import '@fontsource-variable/inter'
+import '@fontsource-variable/inter?url'
+import '@fontsource-variable/dm-sans?url'
 
 export const links: Route.LinksFunction = () => [
   { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
