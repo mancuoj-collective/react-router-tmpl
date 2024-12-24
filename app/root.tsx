@@ -2,8 +2,6 @@ import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration }
 
 import type { Route } from './+types/root'
 import stylesheet from './app.css?url'
-import '@fontsource-variable/inter?url'
-import '@fontsource-variable/dm-sans?url'
 
 export const links: Route.LinksFunction = () => [
   { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
@@ -16,6 +14,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* TODO: remove umami if not needed */}
         {import.meta.env.PROD && (
           <script
             defer
@@ -26,7 +25,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="font-sans antialiased">
+      <body className="bg-lime-100 text-lime-900 font-sans antialiased">
         {children}
         <ScrollRestoration />
         <Scripts />

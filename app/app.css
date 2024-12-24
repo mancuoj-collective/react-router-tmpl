@@ -1,4 +1,6 @@
 @import 'tailwindcss';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/dm-sans';
 
 @theme {
   --font-sans: 'Inter Variable';
