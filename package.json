@@ -7,24 +7,26 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
-    "@react-router/node": "^7.0.2",
-    "@react-router/serve": "^7.0.2",
-    "isbot": "^5.1.18",
+    "@react-router/node": "^7.1.1",
+    "@react-router/serve": "^7.1.1",
+    "isbot": "^5.1.19",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.0.2"
+    "react-router": "^7.1.1"
   },
   "devDependencies": {
-    "@fontsource-variable/dm-sans": "^5.1.0",
-    "@fontsource-variable/inter": "^5.1.0",
-    "@react-router/dev": "^7.0.2",
+    "@fontsource-variable/dm-sans": "^5.1.1",
+    "@fontsource-variable/inter": "^5.1.1",
+    "@fontsource-variable/ubuntu-sans-mono": "^5.1.1",
+    "@react-router/dev": "^7.1.1",
     "@tailwindcss/vite": "4.0.0-beta.5",
     "@types/node": "^22.10.2",
     "@types/react": "^19.0.2",
     "@types/react-dom": "^19.0.2",
+    "daisyui": "5.0.0-beta.1",
     "tailwindcss": "4.0.0-beta.5",
     "typescript": "^5.7.2",
-    "vite": "^6.0.4",
+    "vite": "^6.0.6",
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
