@@ -62,9 +62,9 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   }
 
   return (
-    <main className="flex flex-col items-center min-h-svh p-8 gap-5">
+    <main className="flex flex-col items-center min-h-svh justify-center p-8 gap-5">
       <h1 className="text-3xl font-semibold">{message}</h1>
-      <p className="text-lg">{details}</p>
+      <p>{details}</p>
       {stack && (
         <pre className="w-full mockup-code bg-base-300 text-base-content">
           <code className="text-xs p-5 font-medium">{stack}</code>
