@@ -1,14 +1,4 @@
 @import "tailwindcss";
-@plugin "daisyui";
-@import "@fontsource-variable/inter";
-@import "@fontsource-variable/dm-sans";
-@import "@fontsource-variable/ubuntu-sans-mono";
-
-@theme {
-  --font-inter: "Inter Variable";
-  --font-dm: "DM Sans Variable";
-  --font-mono: "Ubuntu Sans Mono Variable";
-}
 
 @plugin "daisyui" {
   themes: light --default, dark --prefersdark;
