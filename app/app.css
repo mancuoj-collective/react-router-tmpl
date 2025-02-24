@@ -3,12 +3,12 @@
 @import "@fontsource-variable/dm-sans";
 @import "@fontsource-variable/ubuntu-sans-mono";
 
+@plugin "daisyui" {
+  themes: light --default, dark --prefersdark;
+}
+
 @theme {
   --font-inter: "Inter Variable";
   --font-dm: "DM Sans Variable";
   --font-mono: "Ubuntu Sans Mono Variable";
-}
-
-@plugin "daisyui" {
-  themes: light --default, dark --prefersdark;
 }

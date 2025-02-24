@@ -8,28 +8,27 @@
     "check": "biome check --fix --unsafe ./app"
   },
   "dependencies": {
-    "@react-router/node": "^7.1.4",
-    "@react-router/serve": "^7.1.4",
-    "isbot": "^5.1.22",
+    "@react-router/node": "^7.2.0",
+    "@react-router/serve": "^7.2.0",
+    "isbot": "^5.1.23",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-router": "^7.1.4"
+    "react-router": "^7.2.0"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@fontsource-variable/dm-sans": "^5.1.1",
     "@fontsource-variable/inter": "^5.1.1",
     "@fontsource-variable/ubuntu-sans-mono": "^5.1.1",
-    "@react-router/dev": "^7.1.4",
-    "@tailwindcss/vite": "^4.0.1",
-    "@types/node": "^22.12.0",
-    "@types/react": "^19.0.8",
-    "@types/react-dom": "^19.0.3",
-    "daisyui": "^5.0.0-beta.6",
-    "tailwindcss": "^4.0.1",
+    "@react-router/dev": "^7.2.0",
+    "@tailwindcss/vite": "^4.0.8",
+    "@types/node": "^22.13.5",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "daisyui": "^5.0.0-beta.8",
+    "tailwindcss": "^4.0.8",
     "typescript": "^5.7.3",
-    "vite": "^6.0.11",
+    "vite": "^6.1.1",
     "vite-tsconfig-paths": "^5.1.4"
-  },
-  "packageManager": "pnpm@9.15.4"
+  }
 }
