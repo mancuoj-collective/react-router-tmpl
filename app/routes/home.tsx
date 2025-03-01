@@ -10,7 +10,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-svh">
-      <h1 className="btn btn-primary">Vite is All You Need</h1>
+      <h1 className="btn">Vite is All You Need</h1>
     </div>
   )
 }
