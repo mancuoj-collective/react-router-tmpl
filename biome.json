@@ -7,7 +7,7 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": []
+    "ignore": ["tsconfig.json", "tsconfig.node.json", "tsconfig.app.json"]
   },
   "formatter": {
     "enabled": true,
@@ -21,17 +21,20 @@
     "rules": {
       "recommended": true,
       "correctness": {
-        "noInvalidPositionAtImportRule": "off",
         "noUnknownProperty": "off",
         "noEmptyPattern": "off"
+      },
+      "complexity": {
+        "noBannedTypes": "off"
       }
     }
   },
   "javascript": {
     "formatter": {
-      "semicolons": "asNeeded",
       "quoteStyle": "single",
-      "trailingCommas": "all"
+      "trailingCommas": "all",
+      "semicolons": "asNeeded",
+      "lineWidth": 100
     }
   }
 }

@@ -1,11 +1,4 @@
-import {
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-  isRouteErrorResponse,
-} from 'react-router'
+import { Links, Meta, Outlet, Scripts, ScrollRestoration, isRouteErrorResponse } from 'react-router'
 
 import type { Route } from './+types/root'
 import './app.css'
@@ -20,18 +13,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {import.meta.env.PROD && (
-          <script
-            defer
-            src="https://a.mancuoj.me/script.js"
-            data-website-id="411294ea-0e35-4747-aedc-299f363b0fa3"
-          />
-        )}
         <Meta />
         <Links />
       </head>
-      <body className="font-dm antialiased">
-        {children}
+      <body className="font-dm antialiased relative">
+        <div className="texture">{children}</div>
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -51,9 +37,7 @@ export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
   if (isRouteErrorResponse(error)) {
     message = error.status === 404 ? '404' : 'Error'
     details =
-      error.status === 404
-        ? 'The requested page could not be found.'
-        : error.statusText || details
+      error.status === 404 ? 'The requested page could not be found.' : error.statusText || details
   } else if (import.meta.env.DEV && error && error instanceof Error) {
     details = error.message
     stack = error.stack
