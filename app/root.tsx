@@ -1,7 +1,8 @@
 import { Links, Meta, Outlet, Scripts, ScrollRestoration, isRouteErrorResponse } from 'react-router'
 
+import { TwScreenIndicator } from '@/components/tw-screen-indicator'
 import type { Route } from './+types/root'
-import './app.css'
+import '@/app.css'
 
 export const links: Route.LinksFunction = () => [
   { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
@@ -16,8 +17,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="font-sans antialiased relative">
-        <div className="texture">{children}</div>
+      <body className="font-sans antialiased">
+        {children}
+        <TwScreenIndicator />
         <ScrollRestoration />
         <Scripts />
       </body>
