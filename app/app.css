@@ -1,12 +1,9 @@
 @import "tailwindcss";
-@import "@fontsource-variable/inter";
 @import "@fontsource-variable/dm-sans";
 @import "@fontsource-variable/ubuntu-sans-mono";
+@import "@fontsource-variable/source-serif-4";
 
-@plugin "daisyui" {
-  themes: matsu --default, dark --prefersdark;
-}
-
+@plugin "daisyui";
 @plugin "daisyui/theme" {
   name: "matsu";
   default: true; /* set as default */
@@ -72,13 +69,13 @@
 :root:has(input.theme-controller[value="matsu"]:checked),
 [data-theme="matsu"] {
   /* Typography */
-  --font: "Nunito", sans-serif;
-  --font-family: "Nunito", sans-serif;
-  --font-family-serif: "PT Serif", serif;
-  --font-weight-light: 700;
-  --font-weight-normal: 700;
-  --font-weight-medium: 700;
-  --font-weight-semibold: 700;
+  --font: "DM Sans Variable", sans-serif;
+  --font-family: "DM Sans Variable", sans-serif;
+  --font-family-serif: "Source Serif 4 Variable", serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
   --font-weight-bold: 700;
 
   --primary-border: oklch(0.59 0.096 111.8);
@@ -163,10 +160,4 @@
     opacity: 0.12;
     pointer-events: none;
   }
-}
-
-@theme {
-  --font-inter: "Inter Variable";
-  --font-dm: "DM Sans Variable";
-  --font-mono: "Ubuntu Sans Mono Variable";
 }

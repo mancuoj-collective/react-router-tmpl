@@ -7,7 +7,13 @@
   },
   "files": {
     "ignoreUnknown": false,
-    "ignore": ["tsconfig.json", "tsconfig.node.json", "tsconfig.app.json"]
+    "ignore": [
+      ".react-router/*",
+      "build/*",
+      "tsconfig.json",
+      "tsconfig.node.json",
+      "tsconfig.app.json"
+    ]
   },
   "formatter": {
     "enabled": true,
