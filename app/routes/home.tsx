@@ -1,11 +1,10 @@
-import { Button } from "@/components/ui/button";
-import type { Route } from "./+types/home";
+import { Button } from '@/components/ui/button'
 
-export function meta({}: Route.MetaArgs) {
+export function meta() {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+    { title: 'React Router' },
+    { name: 'description', content: 'Welcome to React Router!' },
+  ]
 }
 
 export default function Home() {
@@ -13,5 +12,5 @@ export default function Home() {
     <div className="flex flex-col items-center justify-center min-h-svh">
       <Button>React Router</Button>
     </div>
-  );
+  )
 }
