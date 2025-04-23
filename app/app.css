@@ -4,6 +4,10 @@
 @import '@fontsource-variable/lora';
 @import '@fontsource-variable/geist-mono';
 
+@plugin "@iconify/tailwind4" {
+  prefixes: carbon;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
