@@ -209,26 +209,25 @@
 
 /* view transition */
 ::view-transition-group(root) {
-  animation-timing-function: var(--expo-out);
+  animation-duration: 0.5s;
+  animation-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
 }
 
 ::view-transition-new(root) {
-  transform-origin: top left;
-  animation: scale 1s;
-  mask: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40"><defs><filter id="blur"><feGaussianBlur stdDeviation="2"/></filter></defs><circle cx="0" cy="0" r="18" fill="white" filter="url(%23blur)"/></svg>')
-    top left / 0 no-repeat;
-  mask-origin: content-box;
+  animation-name: reveal;
 }
 
 ::view-transition-old(root),
 .dark::view-transition-old(root) {
   z-index: -1;
-  transform-origin: top left;
-  animation: scale 1s;
+  animation: none;
 }
 
-@keyframes scale {
+@keyframes reveal {
+  from {
+    clip-path: polygon(0% 50%, 100% 50%, 100% 50%, 0% 50%);
+  }
   to {
-    mask-size: 350vmax;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
   }
 }
