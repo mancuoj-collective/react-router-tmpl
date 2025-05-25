@@ -17,7 +17,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body className="font-sans antialiased relative">
-        <ThemeProvider attribute="class" storageKey="remix-tmpl-theme">
+        <ThemeProvider attribute="class" storageKey="remix-tmpl-theme" disableTransitionOnChange>
           {children}
         </ThemeProvider>
         <ScrollRestoration />
