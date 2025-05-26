@@ -1,37 +1,11 @@
 import { useTheme } from 'next-themes'
-import { useEffect, useState } from 'react'
 import { Button } from './ui/button'
 
 export function ThemeToggle() {
-  const { theme, setTheme } = useTheme()
-  const [systemTheme, setSystemTheme] = useState<'light' | 'dark'>('light')
-
-  useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
-    setSystemTheme(mediaQuery.matches ? 'dark' : 'light')
-
-    const handleChange = (e: MediaQueryListEvent) => {
-      setSystemTheme(e.matches ? 'dark' : 'light')
-    }
-
-    mediaQuery.addEventListener('change', handleChange)
-    return () => mediaQuery.removeEventListener('change', handleChange)
-  }, [])
+  const { resolvedTheme, setTheme } = useTheme()
 
   function switchTheme() {
-    switch (theme) {
-      case 'light':
-        setTheme('dark')
-        break
-      case 'dark':
-        setTheme('light')
-        break
-      case 'system':
-        setTheme(systemTheme === 'light' ? 'dark' : 'light')
-        break
-      default:
-        break
-    }
+    setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
   };
 
   function toggleTheme() {

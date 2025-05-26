@@ -210,7 +210,7 @@
 /* view transition */
 ::view-transition-group(root) {
   animation-duration: 0.5s;
-  animation-timing-function: cubic-bezier(0.7, 0, 0.84, 0);
+  animation-timing-function: ease-in-out;
 }
 
 ::view-transition-new(root) {
