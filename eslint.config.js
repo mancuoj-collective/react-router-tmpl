@@ -5,5 +5,6 @@ export default antfu({
   react: true,
   rules: {
     'react-hooks-extra/no-direct-set-state-in-use-effect': 'off',
+    'react-refresh/only-export-components': 'off',
   },
 })

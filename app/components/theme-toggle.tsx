@@ -6,7 +6,7 @@ export function ThemeToggle() {
 
   function switchTheme() {
     setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
-  };
+  }
 
   function toggleTheme() {
     if (!document.startViewTransition) {
