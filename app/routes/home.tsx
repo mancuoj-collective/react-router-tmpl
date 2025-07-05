@@ -14,8 +14,13 @@ export default function Home() {
     <div className="relative font-sans antialiased">
       <div className="flex flex-col items-center justify-center min-h-svh">
         <div className="flex gap-2.5 items-center">
-          <Button variant="outline">
-            <a href="https://github.com/mancuoj-collective/remix-tmpl">
+          <Button variant="outline" asChild>
+            <a
+              href="https://github.com/mancuoj-collective/remix-tmpl"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="iconify carbon--logo-github size-4" />
               GitHub
             </a>
           </Button>
