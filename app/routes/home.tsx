@@ -16,7 +16,7 @@ export default function Home() {
         <div className="flex gap-2.5 items-center">
           <Button variant="outline" asChild>
             <a
-              href="https://github.com/mancuoj-collective/remix-tmpl"
+              href="https://github.com/mancuoj-collective/react-router-tmpl"
               target="_blank"
               rel="noopener noreferrer"
             >
