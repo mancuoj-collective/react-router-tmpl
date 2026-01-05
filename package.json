@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^6.7.3",
-    "@eslint-react/eslint-plugin": "^2.4.0",
+    "@eslint-react/eslint-plugin": "^2.5.1",
     "@fontsource-variable/dm-sans": "^5.2.8",
     "@fontsource-variable/geist-mono": "^5.2.7",
     "@fontsource-variable/lora": "^5.2.8",
