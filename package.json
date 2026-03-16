@@ -12,7 +12,7 @@
     "@react-router/serve": "^7.13.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
-    "isbot": "^5.1.35",
+    "isbot": "^5.1.36",
     "lucide-react": "^0.577.0",
     "next-themes": "^0.4.6",
     "radix-ui": "latest",
@@ -23,7 +23,7 @@
     "tailwind-merge": "^3.5.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.7.0",
+    "@antfu/eslint-config": "^7.7.2",
     "@eslint-react/eslint-plugin": "^2.13.0",
     "@fontsource-variable/dm-sans": "^5.2.8",
     "@fontsource-variable/geist-mono": "^5.2.7",
